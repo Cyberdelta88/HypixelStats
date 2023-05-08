@@ -18,7 +18,7 @@ public class CmdPlanck implements CommandExecutor{
             p2 = (Player) sender;
             if (args.length >= 1) {
                 String LienNameMc = "https://plancke.io/hypixel/player/stats/" + args[0];
-                TextComponent msgoui = new TextComponent("§aVoici le lien tu peux cliquer dessus");
+                TextComponent msgoui = new TextComponent("§aHere is the link you can click on it");
                 msgoui.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§dClick to open the link").create()));
                 msgoui.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, LienNameMc));
                 p2.spigot().sendMessage(msgoui);
