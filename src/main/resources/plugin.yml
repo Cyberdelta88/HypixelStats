@@ -1,0 +1,5 @@
+name: HypixelStats
+version: '${project.version}'
+main: fr.cyberdelta88.hypixelstats.HypixelStats
+commands:
+  hypixelstats :
