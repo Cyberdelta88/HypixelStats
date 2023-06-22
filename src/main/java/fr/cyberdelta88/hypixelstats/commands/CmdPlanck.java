@@ -17,10 +17,10 @@ public class CmdPlanck implements CommandExecutor{
         if (sender instanceof Player) {
             p2 = (Player) sender;
             if (args.length >= 1) {
-                String LienNameMc = "https://plancke.io/hypixel/player/stats/" + args[0];
+                String LienPlancke = "https://plancke.io/hypixel/player/stats/" + args[0];
                 TextComponent msgoui = new TextComponent("§aHere is the link you can click on it");
                 msgoui.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§dClick to open the link").create()));
-                msgoui.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, LienNameMc));
+                msgoui.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, LienPlancke));
                 p2.spigot().sendMessage(msgoui);
             } else {
                 if (args.length < 1) {
@@ -32,8 +32,8 @@ public class CmdPlanck implements CommandExecutor{
             return false;
         } else {
             if (args.length >= 1) {
-                String LienNameMc = "https://plancke.io/hypixel/player/stats/" + args[0];
-                sender.sendMessage(LienNameMc);
+                String LienPlancke = "https://plancke.io/hypixel/player/stats/" + args[0];
+                sender.sendMessage(LienPlancke);
             }
         }
         return false;
